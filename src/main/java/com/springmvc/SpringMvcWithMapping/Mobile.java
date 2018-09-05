@@ -11,7 +11,6 @@ import javax.persistence.Table;
 @Table(name="MOBILES")
 public class Mobile {
 	@Id
-	@GeneratedValue
 	@Column(name="MOBILE_ID")
 	private int mobileId;
 	@Column(name="MOBILE_NAME")

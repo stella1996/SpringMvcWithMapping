@@ -13,7 +13,6 @@ public class Student_Address {
 	
 	@Id
     @Column(name = "ADDR_ID")
-    @GeneratedValue
     private int addrId;
     @Column(name = "DOOR_NO")
 	private int doorNo;
@@ -26,6 +25,12 @@ public class Student_Address {
     @OneToOne(targetEntity=Student.class)
 	private Student student;
 	
+	public int getAddrId() {
+		return addrId;
+	}
+	public void setAddrId(int addrId) {
+		this.addrId = addrId;
+	}
 	public int getDoorNo() {
 		return doorNo;
 	}

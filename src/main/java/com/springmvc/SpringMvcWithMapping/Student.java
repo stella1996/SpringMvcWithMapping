@@ -11,12 +11,13 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension;
+
 @Entity
 @Table(name="STUDENT")
-public class Student {
+public class Student{
 
     @Id
-    @GeneratedValue
     @Column(name="STUDENT_ID",nullable=false)
     private int studentId;
     
